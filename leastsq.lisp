@@ -1,5 +1,8 @@
 (in-package :common-lisp-user)
 
+;; turn off optimization:
+(declaim (optimize debug))
+
 (asdf:operate 'asdf:load-op :gsll)
 
 (defconstant +parameters+ '(1.0 2.0 10.0 20.0 30.0))
